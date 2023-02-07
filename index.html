@@ -1,137 +1,278 @@
-SCI 566 - Deep Learning and its Applications
-syllabus lectures
-Schedule
-Date 	Lecture 	Homework / Readings 	Logistics
-Module 1: Deep Learning Basics
-1/10 	Lecture 1 (Xiang):
-Course Intro + Entrance Exam
-[ slides | video ] 	
+<!DOCTYPE html>
+<html>
 
-    DL 1.1-2, 12.1-5
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-language" content="en">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    	
+  <title>CSCI 566 - Deep Learning and its Applications</title>
+  <meta name="description" content="CSCI 566 - Deep Learning and its Applications - University of Southern California - Spring 2022
+">
 
-    1/17 	No Class (MLK Day)
-    1/24 	Lecture 2 (Xiang):
-    Machine Learning Review
-    [ slides | video ] 	
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
 
-        Project Team (due 1/31)
-	    DL 5.1-4, 5.7-9
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="canonical" href="/">
 
-	    	
+  
+  <!-- Load Latex JS -->
+  <script src="https://cdn.jsdelivr.net/npm/latex.js@0.11.1/dist/latex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/latex.js@0.11.1/dist/latex.component.js"></script>
+  
+</head>
 
-	    1/31 	Lecture 3 (Xiang):
-	    Intro to Neural Networks + CNNs
-	    [ slides | video ] 	
 
-	        DL 6.1-5, 9.1-7
+  <body>
 
-			
+    <header class="site-header">
 
-		Project Team due
-		2/7 	Lecture 4 (Xiang, Nathan, Bingjie):
-		CNNs + Neural Network Training + PyTorch/GCP/CARC Tutorials
-		[ slides | video | tutorials ] 	
+  <div class="wrapper">
 
-		    HW 1 (due 2/21)
-		        Project Proposal Slides (due 2/14)
-			    DL 7.1-13, 8.1-5
+    <span class="site-title">
+      <a class="page-link" href="https://csci566-spring2023.github.io/">CSCI 566 - Deep Learning and its Applications</a>
+    </span>
 
-			    	
+    <nav class="site-nav">
+      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
 
-			    2/14 	Lecture 5 (Xiang, Bingjie, Aaron):
-			    RNNs + Entrance Exam Review
-			    [ slides | video ] 	
+      <div class="trigger">
+        <a class="page-link" href="https://docs.google.com/document/d/1iFUMaC8f_8Thbcj9mjoQvebpDDYTjxj-zAWU0C7YoGc/edit?usp=share_link">syllabus</a>
+        <a class="page-link" href="/lectures/">lectures</a>
+        <!-- <a class="page-link" href="/logistics/">logistics</a> -->
+        <!-- <a class="page-link" href="/notes/">notes</a> -->
+        <!-- <a class="page-link" href="/homework/">homework</a> -->
+        <!-- <a class="page-link" href="/project/">project</a> -->
+        <!-- <a class="page-link" href="/reports/">reports</a> -->
+      </div>
+    </nav>
 
-			        DL 10.1-7, 10.9-11
+  </div>
 
-					
+</header>
 
-				Project Proposal Slides due
-				Module 2: Deep Learning Applications
-				2/21 	No Class (Presidents' Day)
-				2/28 	Lecture 6 (Xiang):
-				DL for NLP + Project Pitch Presentations
-				[ slides | video ] 	
 
-				    Project Survey Report (due 3/7)
-				        DL 12.4-5
 
-						
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
 
-					3/7 	Lecture 7 (Xiang):
-					DL for NLP + DL for Computer Vision
-					[ slides | video ] 	
+  <header class="post-header about">
+    <img class="logo" src="/assets/img/usc-logo.png">
+    <h1 class="post-title">Deep Learning and its Applications</h1>
+    <h2 class="post-description clearfix">CSCI 566 • Spring 2023 • University of Southern California</h2>
+  </header>
 
-					    HW 2 (due 3/21)
-					        Project Midterm Report (due 4/4)
-						    DL 12.2, 14.1-5, 14.9
+  <article class="post-content Deep Learning and its Applications clearfix">
+    <p>Recently, deep learning has advanced many AI-related problems from image retrieval, video analysis, to natural language processing, to self-driving, and to medical applications. Our goal is to guide students to get familiar with these recent cutting-edge deep learning (DL) advances in computer vision and natural language processing. Through this course, students will gain a basic understanding of DL algorithms, and how to set up and solve problems involving deep learning techniques. The course will include a couple of practical assignments and a final course project. For the final course project, students will be encouraged to pick their own topics, but can also select from a provided list of projects.</p>
 
-						    	
+<hr />
 
-						    Project Survey Report due
-						    3/14 	No Class (Spring Break)
-						    Module 3: Advanced Topics in Deep Learning
-						    3/21 	Lecture 8 (Xiang):
-						    GANs + Deep RL
-						    [ slides | video ] 	
+<ul>
+  <li><strong>Time:</strong> Fridays, 1:00pm-4:20pm PST</li>
+  <li><strong>Location:</strong> <a href="https://maps.usc.edu/?id=1928#!m/552568" target="\_blank">THH 201</a></li>
+  <li><strong>Discussion:</strong> <a href="https://piazza.com/class/lcpa44ep1pk5aj/" target="\_blank">Piazza</a>
+<!-- - **HW submission:** [Gradescope](https://www.gradescope.com/courses/36025){:target="\_blank"} -->
+<!-- - **Online Lectures:** The lectures will be live-streamed through [Panopto](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=0f44b4d7-fb4e-49eb-b88d-a9d00125e1b3){:target="\_blank"}, recorded, and made available on [YouTube](https://www.youtube.com/playlist?list=PLoZgVqqHOumTY2CAQHL45tQp6kmDnDcqn){:target="\_blank"}. --></li>
+  <li><strong>Contact:</strong> Students should use <a href="https://piazza.com/class/lcpa44ep1pk5aj/" target="\_blank">Piazza</a> for any course-related questions. For external inquiries, personal matters, or emergencies, you can email the CSCI 566 staff at <code class="language-plaintext highlighter-rouge">csci566.spring2023@gmail.com</code>. Please do <em>not</em> email any of the CSCI 566 staff individually.</li>
+</ul>
 
-						        Paper Presentations - Teams CVSH, YYDS, The Coolest, Narrator, and Akashic Records (due 3/28)
+<hr />
 
-								
+  </article>
 
-							HW 2 due
-							3/28 	Lecture 9 (Xiang):
-							Attention, Memory, and Relation Networks + Paper Presentations
-							[ slides | video | paper presentations ] 	
+  <!-- Staff  -->
+  <div class="instructors clearfix">
+  
+  <div class="instructor-profile-two-col">
+    <a href="https://jessethomason.com/" target="_blank"><img src="/assets/img/staff/jesse.jpeg" /></a>
+    <ul class="instructor-info">
+      <li><span><b>Instructor</b></span> <br> <a href="https://jessethomason.com/" target="_blank">Prof. Jesse Thomason</a></li>
+      <!-- <li><span>Email:</span> <a href="mailto:" target="_blank"></a></li> -->
+      <li><span>OH:</span> Mondays 10-11am, SAL 244</li>
+    </ul>
+  </div>
+  
 
-							    Paper Presentations - Teams Alchemy Club, SWAY, DeepSports, Simply Convoluted, and Tmage (due 4/4)
+  
+  <div class="instructor-profile-two-col">
+    
+    <a href="https://sites.google.com/usc.edu/deqingfu" target="_blank"><img src="/assets/img/staff/deqing.jpeg" /></a>
+    
+    <ul class="instructor-info">
+      <li><span><b>Teaching Assistant</b></span> <br> <a href="https://sites.google.com/usc.edu/deqingfu" target="_blank">Deqing Fu</a></li>
+      <!-- <li><span>Email:</span> <a href="mailto:" target="_blank"></a></li> -->
+      <li><span>OH:</span> Wednesdays 3-4pm, RTH 4th Floor</li>
+    </ul>
+  </div>
+  
+  <div class="instructor-profile-two-col">
+    
+    <a href="http://www.gautamsalhotra.com/" target="_blank"><img src="/assets/img/staff/gautam.jpg" /></a>
+    
+    <ul class="instructor-info">
+      <li><span><b>Teaching Assistant</b></span> <br> <a href="http://www.gautamsalhotra.com/" target="_blank">Gautam Salhotra</a></li>
+      <!-- <li><span>Email:</span> <a href="mailto:" target="_blank"></a></li> -->
+      <li><span>OH:</span> Wednesdays 3-4pm, RTH 4th Floor</li>
+    </ul>
+  </div>
+  
+  <div class="instructor-profile-two-col">
+    
+    <a href="https://tejas1995.github.io/" target="_blank"><img src="/assets/img/staff/tejas.jpg" /></a>
+    
+    <ul class="instructor-info">
+      <li><span><b>Teaching Assistant</b></span> <br> <a href="https://tejas1995.github.io/" target="_blank">Tejas Srinivasan</a></li>
+      <!-- <li><span>Email:</span> <a href="mailto:" target="_blank"></a></li> -->
+      <li><span>OH:</span> Thursdays 10-11am, RTH 4th Floor</li>
+    </ul>
+  </div>
+  
+  <div class="instructor-profile-two-col">
+    
+    <a href="https://bingjietang718.github.io/" target="_blank"><img src="/assets/img/staff/bingjie.jpeg" /></a>
+    
+    <ul class="instructor-info">
+      <li><span><b>Teaching Assistant</b></span> <br> <a href="https://bingjietang718.github.io/" target="_blank">Bingjie Tang</a></li>
+      <!-- <li><span>Email:</span> <a href="mailto:" target="_blank"></a></li> -->
+      <li><span>OH:</span> Thursdays 10-11am, <a href="https://usc.zoom.us/j/94238516038?pwd=VWthckUxM1VYRDM5SUxwTlY2eC9Qdz09">Zoom</a></li>
+    </ul>
+  </div>
+  
+  <div class="instructor-profile-two-col">
+    
+    <a href="https://www.linkedin.com/in/shihan-lu-4775ab111/" target="_blank"><img src="/assets/img/staff/11.jpg" /></a>
+    
+    <ul class="instructor-info">
+      <li><span><b>Teaching Assistant</b></span> <br> <a href="https://www.linkedin.com/in/shihan-lu-4775ab111/" target="_blank">Shihan Lu</a></li>
+      <!-- <li><span>Email:</span> <a href="mailto:" target="_blank"></a></li> -->
+      <li><span>OH:</span> Tuesdays 4-5pm, Tables outside RTH Cafe</li>
+    </ul>
+  </div>
+  
+  <div class="instructor-profile-two-col">
+    
+    <a href="http://ayushj240.github.io/" target="_blank"><img src="/assets/img/staff/ayush.jpeg" /></a>
+    
+    <ul class="instructor-info">
+      <li><span><b>Teaching Assistant</b></span> <br> <a href="http://ayushj240.github.io/" target="_blank">Ayush Jain</a></li>
+      <!-- <li><span>Email:</span> <a href="mailto:" target="_blank"></a></li> -->
+      <li><span>OH:</span> Thursdays 11-11:30am, RTH 4th Floor</li>
+    </ul>
+  </div>
+  
+  <div class="instructor-profile-two-col">
+    
+    <a href="https://jesbu1.github.io/" target="_blank"><img src="/assets/img/staff/jessez.jpeg" /></a>
+    
+    <ul class="instructor-info">
+      <li><span><b>Teaching Assistant</b></span> <br> <a href="https://jesbu1.github.io/" target="_blank">Jesse Zhang</a></li>
+      <!-- <li><span>Email:</span> <a href="mailto:" target="_blank"></a></li> -->
+      <li><span>OH:</span> Thursdays 11:30am-12pm, RTH 4th Floor</li>
+    </ul>
+  </div>
+  
+</div>
 
-							    	
 
-							    4/4 	Lecture 10 (Xiang):
-							    Generative Models + Language Models + Paper Presentations
-							    [ slides | video | paper presentations ] 	
+  <!-- Announcements  -->
+  <div class="news">
+  <h2>Announcements</h2>
+  
+    <table>
+    
+    
+    </table>
+  
+</div>
 
-							        Paper Presentations - Teams HelloWorld, LABrain, Iwannknow, DeepSight, and X-Trojans (due 4/11)
 
-									
+</div>
 
-								Midterm Report due
-								4/11 	Lecture 11 (Xiang):
-								Self-Supervised Learning + Paper Presentations
-								[ slides | video | paper presentations ] 	
+      </div>
+    </div>
 
-								    Paper Presentations - Teams Deep Learning Ville, Cerberus, XForce, Awesome Robots, and YYDX (due 4/18)
+    <footer class="site-footer">
 
-								    	
+  <div class="wrapper">
 
-								    4/18 	Lecture 12 (Xiang):
-								    Transfer Learning + Multitask Learning + Paper Presentations
-								    [ slides | video | paper presentations ] 	
+    <h2 class="footer-heading">CSCI 566 - Deep Learning and its Applications</h2>
 
-								        Paper Presentations - Teams Discerning Deep Learning, Ontology Attention, DeepDivers, Deep Discord Developers, Generative adversarial network noise (GANN) Team (due 4/25)
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">Spring 2023</li><li><a class="u-email" href="mailto:csci566.spring2023@gmail.com">csci566.spring2023@gmail.com</a></li></ul>
+      </div>
 
-										
+      <div class="footer-col footer-col-2"><ul class="social-media-list"></ul>
+</div>
 
-									4/25 	Lecture 13 (Xiang):
-									Multi-Modal Learning + Paper Presentations
-									[ slides | video | paper presentations ] 	
+      <div class="footer-col footer-col-3">
+        <p>&copy; Copyright 2023 University of Southern California. <br />
+        Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+</p>
+      </div>
+    </div>
 
-									    Final Project Presentations (due 5/2)
+  </div>
 
-									    	
+</footer>
 
-									    5/2 	Lecture 14 (Xiang):
-									    Final Project Presentations
-									    [ slides | video ] 	
 
-									        Final Project Report (due 5/8)
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
 
-											
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
 
-										CSCI 566 - Deep Learning and its Applications
 
-										    Spring 2022
-										        csci566.spring2022@gmail.com
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.1/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+<!-- Load Anchor JS -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
+<script>
+  anchors.options.visible = 'hover';
+  anchors.add('article h2, article h3, article h4, article h5, article h6');
+</script>
+
+
+
+<!-- Adjust LaTeX JS -->
+<script src="/assets/js/latex.js"></script>
+
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/fontawesome-all.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', '', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
+</html>
