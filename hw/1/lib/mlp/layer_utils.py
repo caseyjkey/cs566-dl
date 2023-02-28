@@ -18,10 +18,10 @@ class sequential(object):
         self.layer_names = {}
 
         # process the parameters layer by layer
-        for layer_cnt, layer in enumerate(args):
+        for layer_idx, layer in enumerate(args):
             for n, v in layer.params.items():
                 self.params[n] = v
-                self.paramName2Indices[n] = layer_cnt
+                self.paramName2Indices[n] = layer_idx
             for n, v in layer.grads.items():
                 self.grads[n] = v
             if layer.name in self.layer_names:
